@@ -1,7 +1,7 @@
 
 # ☁️ Here is a basic Serverless AWS Application ☁️
 
-This is a serverless application built with Node.js and AWS Lambda. It provides a basic example of how to create serverless functions using AWS Lambda and API Gateway.
+This is a serverless application built with Node.js/Typescript and AWS Lambda. It provides a basic example of how to create serverless functions using AWS Lambda and API Gateway.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ Follow the steps below to get started with the application:
    ```bash
    npm install
 
-3. Configure AWS credentials:
+4. Configure AWS credentials:
 
 Set up your AWS IAM credentials by either configuring the AWS CLI using `aws configure` or setting the environment variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
 
@@ -29,7 +29,11 @@ Set up your AWS IAM credentials by either configuring the AWS CLI using `aws con
 
 Update the `serverless.json` file in the project root to customize the service name, region, and other settings as needed.
 
-5. Deploy the application:
+5. Build the project:
+   ```bash
+       tsc
+
+6. Deploy the application:
    ```bash
     sls deploy
 
