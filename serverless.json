@@ -1,0 +1,23 @@
+{
+  "service": "my-serverless-app",
+  "frameworkVersion": ">=1.28.0",
+  "provider": {
+    "name": "aws",
+    "runtime": "nodejs14.x",
+    "profile": "Armiyants"
+
+  },
+  "functions": {
+    "hello": {
+      "handler": "src/functions/hello/handler.hello",
+      "events": [
+        {
+          "http": {
+            "path": "hello",
+            "method": "get"
+          }
+        }
+      ]
+    }
+  }
+}
